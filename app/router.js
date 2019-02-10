@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('admin', function() {
+    this.route('food-establishments', function() {
+      this.route('new');
+    });
+  });
 });
 
 export default Router;
