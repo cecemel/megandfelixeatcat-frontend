@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <th>
+      First Name
+    </th>
+    <th>
+      Last Name
+    </th>
+    <th>
+      Actions <button {{action "create"}}>+</button>
+    </th>
+  </thead>
+  <tbody>
+    {{#if this.createMode}}
+      {{admin/reviewers-table-create reviewer=this.newReviewer  onSave=(action "onSaveCreate")}}
+    {{/if}}
+
+    {{#each this.reviewers as |reviewer|}}
+    <tr>
+      <td>{{reviewer.firstname}}</td>
+      <td>{{reviewer.familyName}}</td>
+      <td><button>Delete</button><button>Edit</button></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
