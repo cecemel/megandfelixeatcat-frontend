@@ -4,41 +4,10 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: [
-    'ember', 'ie11'
-  ],
-  extends: [
-    'eslint:recommended',
-    'plugin:ember/recommended'
-  ],
+  extends: 'eslint:recommended',
   env: {
     browser: true
   },
   rules: {
-    'ie11/no-collection-args': ['error'],
-    'ie11/no-for-in-const': ['error'],
-    'ie11/no-loop-func': ['warn'],
-    'ie11/no-weak-collections': ['error']
-  },
-  overrides: [
-    // node files
-    {
-      files: [
-        '.template-lintrc.js',
-        'ember-cli-build.js',
-        'testem.js',
-        'blueprints/*/index.js',
-        'config/**/*.js',
-        'lib/*/index.js'
-      ],
-      parserOptions: {
-        sourceType: 'script',
-        ecmaVersion: 2015
-      },
-      env: {
-        browser: false,
-        node: true
-      }
-    }
-  ]
+  }
 };
