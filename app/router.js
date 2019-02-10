@@ -11,6 +11,8 @@ Router.map(function() {
     this.route('food-establishments', function() {
       this.route('new');
     });
+
+    this.route('reviewers', function() {});
   });
 });
 
