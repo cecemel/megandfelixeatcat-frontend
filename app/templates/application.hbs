@@ -1,2 +1,95 @@
-<h1>MegandfelixeatCat</h1>
-{{outlet}}
+<div class="layout-column">
+  <div class="flex ad-horizontal">advertising</div>
+</div>
+
+
+{{#paper-sidenav-container style="width:100%"}}
+  {{#paper-sidenav
+     class="md-whiteframe-z2"
+     name="left"
+     position="left"
+     open=rightSideBarOpen
+     lockedOpen=false
+     onToggle=(action (mut rightSideBarOpen))}}
+    {{#paper-content padding=true}}
+      Çup? I'm on the right side.
+    {{/paper-content}}
+  {{/paper-sidenav}}
+
+
+
+  {{#paper-content}}
+    <div class="layout-column">
+      <div clas="flex">
+        {{#paper-toolbar}}
+          {{#paper-toolbar-tools}}
+            {{#paper-sidenav-toggle name="left" as |toggleAction|}}
+              {{paper-button raised=true onClick=(action toggleAction) iconButton=true}}
+            {{/paper-sidenav-toggle}}
+        <h2>logo</h2>
+        <span class="flex"></span>
+        <div>
+          {{paper-icon "baseline-search" size=20}}
+        </div>
+      {{/paper-toolbar-tools}}
+      {{/paper-toolbar}}
+      </div>
+    </div>
+
+
+    <div class="layout-row flex layout-align-center-center">
+      <div class="flex-80">
+        {{#paper-card as |card|}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline}}Card with image{{/text.headline}}
+              {{#text.subhead}}Large{{/text.subhead}}
+            {{/title.text}}
+            {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
+          {{/card.title}}
+          {{#card.actions}}
+            {{#paper-button}}Action 1{{/paper-button}}
+            {{#paper-button}}Action 2{{/paper-button}}
+          {{/card.actions}}
+        {{/paper-card}}
+
+        {{#paper-card as |card|}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline}}Card with image{{/text.headline}}
+              {{#text.subhead}}Large{{/text.subhead}}
+            {{/title.text}}
+            {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
+          {{/card.title}}
+          {{#card.actions}}
+            {{#paper-button}}Action 1{{/paper-button}}
+            {{#paper-button}}Action 2{{/paper-button}}
+          {{/card.actions}}
+        {{/paper-card}}
+
+        {{#paper-card as |card|}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline}}Card with image{{/text.headline}}
+              {{#text.subhead}}Large{{/text.subhead}}
+            {{/title.text}}
+            {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
+          {{/card.title}}
+          {{#card.actions}}
+            {{#paper-button}}Action 1{{/paper-button}}
+            {{#paper-button}}Action 2{{/paper-button}}
+          {{/card.actions}}
+        {{/paper-card}}
+
+      </div>
+    </div>
+
+    {{/paper-content}}
+
+{{/paper-sidenav-container}}
+
+<div class="footer">
+  <div class="layout-column">
+    <div class="flex ad-horizontal">advertising</div>
+  </div>
+</div>
