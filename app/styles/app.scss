@@ -1,0 +1,27 @@
+$primary: "light-green";
+$accent: "grey";
+$warn: "red";
+
+// Import ember-paper.
+@import "ember-paper";
+
+.ad-horizontal{
+  height: 10vh;
+  color: paper-contrast-paper-color($warn, '500');
+  background-color: paper-color($warn, '200');
+  }
+
+.container-content{
+  height: 80vh;
+  overflow:auto;
+  }
+
+.side-column {
+  color: paper-contrast-paper-color($primary, '500');
+  background-color: paper-color($primary, '200');
+}
+
+.top-column {
+  color: paper-contrast-paper-color($primary, '500');
+  background-color: paper-color($primary, '500');
+  }
