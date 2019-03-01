@@ -7,8 +7,8 @@ $warn: "red";
 
 .ad-horizontal{
   height: 10vh;
-  color: paper-contrast-paper-color($warn, '500');
-  background-color: paper-color($warn, '200');
+  color: paper-contrast-paper-color($primary, '500');
+  background-color: paper-color($primary, '500');
   }
 
 .container-content{
