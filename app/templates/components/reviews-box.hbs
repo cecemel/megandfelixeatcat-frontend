@@ -1,11 +1,14 @@
 {{#each this.sortedReviews as |r|}}
-    <div class="layout-row">
-      <div class="flex-80">
+    <div class="layout-column">
+      <div class="flex">
         <h4 class="review-card-title">{{r.headline}}</h4>
         <span class="review-card-author"> by {{r.authors.firstObject.firstname}} on {{moment-format r.created 'DD-MM-YYYY'}}</span>
       </div>
       <div class="flex">
-        
+        <div class="space-top layout-row layout-align-space-between-end">
+        {{rating-box rating=r.rating.ratingValue}}
+          {{rating-box rating=r.rating.veggieScore isVeggie=true}}
+        </div>
       </div>
     </div>
     <div class="layout-column">
