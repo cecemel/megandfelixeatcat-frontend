@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('food-establishments', function() {
       this.route('new');
+      this.route('edit');
     });
 
     this.route('reviewers', function() {});

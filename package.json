@@ -20,6 +20,7 @@
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
+    "@lblod/ember-vo-mu-file-upload": "^0.4.0",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
     "ember-cli": "~3.7.1",
@@ -50,6 +51,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-moment": "^7.8.1",
     "ember-paper": "^1.0.0-beta.22",
+    "ember-power-select": "^2.2.2",
     "ember-qunit": "^3.4.1",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.7.0",

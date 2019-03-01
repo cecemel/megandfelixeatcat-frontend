@@ -1,0 +1,12 @@
+{{#power-select
+   allowClear=true
+   placeholder="search"
+   search=(perform searchByName)
+   selected=_establishment
+   onchange=(action "select")
+   as |establishment|}}
+  {{establishment.establishmentName}}
+{{/power-select}}
+<br>
+{{vo-mu-file-dropzone onFinishUpload=(action "addFile") accept="image/*" maxFileSizeMB=1024 endPoint="/files"}}
+{{yield}}

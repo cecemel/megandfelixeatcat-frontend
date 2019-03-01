@@ -9,7 +9,7 @@ export default Component.extend({
   fastboot: service(),
 
   loadData: task(function*(){
-    let establishments = yield this.store.query('food-establishment', {include: 'ratings,reviews'} );
+    let establishments = yield this.store.query('food-establishment', {include: 'ratings,reviews,photos,address'} );
     this.set('establishments', establishments);
 
   }),

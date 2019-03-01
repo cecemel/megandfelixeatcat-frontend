@@ -13,7 +13,7 @@ export default Model.extend({
   format: attr(),
   size: attr(),
   extension: attr(),
-  created: attr('datetime'),
+  created: attr(''),
   download: belongsTo('file', { inverse: null }),
 
   rdfaBindings: Object.freeze({
