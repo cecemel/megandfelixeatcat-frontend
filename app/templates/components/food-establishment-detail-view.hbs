@@ -1,0 +1,25 @@
+<div class="layout-column layout-gt-xs-row flex layout-align-left-center">
+  <div class="flex"> <h2>{{establishment.establishmentName}} </h2> </div>
+  <div class="flex"> A restaurant in the city of Brussels</div>
+  <div class="flex"> <h3>Rating</h3> </div>
+  <div class="flex food-establishment-detail-ratingbox">
+    <div class="layout-row layout-align-space-between-end">
+      {{rating-box rating=establishment.aggregateRating.ratingValue}}
+      {{rating-box rating=establishment.aggregateRating.avgVeggieScore isVeggie=true}}
+    </div>
+  </div>
+  <div class="flex food-establishment-detail-ratingbox-below">
+    <div class="layout-row layout-align-space-between-end">
+      <div class="flex-40">Ratings so far: {{establishment.aggregateRating.count}}</div>
+      <div class="food-establishment-detail-website flex-offset-20 flex-40"><a href="{{establishment.website}}" target="_blank">open website</a></div>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="layout-row layout-align-center-center">
+      <img src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg"/>
+    </div>
+  </div>
+</div>
+<div class="layout-column layout-align-left-center">
+  {{reviews-box reviews=establishment.reviews}}
+</div>

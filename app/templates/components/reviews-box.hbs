@@ -1,0 +1,15 @@
+{{#each this.sortedReviews as |r|}}
+    <div class="layout-row">
+      <div class="flex-80">
+        <h4 class="review-card-title">{{r.headline}}</h4>
+        <span class="review-card-author"> by {{r.authors.firstObject.firstname}} on {{moment-format r.created 'DD-MM-YYYY'}}</span>
+      </div>
+      <div class="flex">
+        
+      </div>
+    </div>
+    <div class="layout-column">
+      <div class="flex"><p>{{r.reviewBody}}</p></div>
+    </div>
+  {{paper-divider}}
+{{/each}}

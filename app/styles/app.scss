@@ -25,3 +25,64 @@ $warn: "red";
   color: paper-contrast-paper-color($primary, '500');
   background-color: paper-color($primary, '500');
   }
+
+.food-establishment-detail-ratingbox{
+  margin-bottom:2%;
+}
+
+.food-establishment-detail-ratingbox-below{
+  margin-bottom:2%;
+}  
+  
+.food-establishment-detail-website{
+  text-align: right;
+}
+
+.rating-icon {
+  height:25px;
+  witdth: 25px;
+  }
+    
+.rating-icon-grey {
+   filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  }
+
+
+.review-card-title{
+    margin-bottom: 3%;
+}
+.review-card-author{
+  font-size:small;
+}
+
+.quote-review-card{
+  margin-top: 3%
+}
+
+
+
+$background-color: hsl(50, 5, 97);
+$black: hsl(200, 40, 10);
+$white: $background-color;
+$base-font-size: 1.4em;
+$base-line-height: 1.5em;
+
+.ludwig {
+  margin-left:0;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten($black, 40%);
+  font-family: 'Roboto', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 100;
+  &:before, &:after {
+      content: '\201C';
+      
+      color: lighten($black, 40%);
+   }
+   &:after {
+      content: '\201D';
+   }
+}

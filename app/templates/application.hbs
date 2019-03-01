@@ -51,78 +51,7 @@
   </div>
   <div class="layout-row flex layout-align-center-center">
     <div class="flex">
-      {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}Card with image{{/text.headline}}
-            {{#text.subhead}}Large{{/text.subhead}}
-          {{/title.text}}
-          {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
-        {{/card.title}}
-        {{#card.actions}}
-          {{#paper-button}}Action 1{{/paper-button}}
-          {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-      {{/paper-card}}
-
-      {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}Card with image{{/text.headline}}
-            {{#text.subhead}}Large{{/text.subhead}}
-          {{/title.text}}
-          {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
-        {{/card.title}}
-        {{#card.actions}}
-          {{#paper-button}}Action 1{{/paper-button}}
-          {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-      {{/paper-card}}
-
-      {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}Card with image{{/text.headline}}
-            {{#text.subhead}}Large{{/text.subhead}}
-          {{/title.text}}
-          {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
-        {{/card.title}}
-        {{#card.actions}}
-          {{#paper-button}}Action 1{{/paper-button}}
-          {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-      {{/paper-card}}
-
-
-      {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}Card with image{{/text.headline}}
-            {{#text.subhead}}Large{{/text.subhead}}
-          {{/title.text}}
-          {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
-        {{/card.title}}
-        {{#card.actions}}
-          {{#paper-button}}Action 1{{/paper-button}}
-          {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-      {{/paper-card}}
-
-
-
-      {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-          {{#title.text as |text|}}
-            {{#text.headline}}Card with image{{/text.headline}}
-            {{#text.subhead}}Large{{/text.subhead}}
-          {{/title.text}}
-          {{title.media size="lg" src="https://yonoapartments.com/wp-content/uploads/2016/07/restaurants-thumbnail.jpg" alt="Tomster" title="Tomster"}}
-        {{/card.title}}
-        {{#card.actions}}
-          {{#paper-button}}Action 1{{/paper-button}}
-          {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-      {{/paper-card}}
+      {{outlet}}
     </div>
   </div>
 </div>

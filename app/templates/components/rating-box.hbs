@@ -1,0 +1,9 @@
+<div class="layout-row flex layout-align-start-start">
+  {{#each this.ratingArray as |s| }}
+    {{#if (eq s 1)}}
+      <img class="rating-icon" src="{{this.image}}">
+    {{else}}
+      <img class="rating-icon rating-icon-grey" src="{{this.image}}">
+    {{/if}}
+  {{/each}}
+</div>

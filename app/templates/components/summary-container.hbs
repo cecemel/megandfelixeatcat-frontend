@@ -1,0 +1,8 @@
+{{#if loadData.isRunning}}
+  {{paper-progress-circular accent=true class="md-hue-1" diameter=60}}
+{{else}}
+  {{#each this.establishments as |e|}}
+    {{summary-card establishment=e onDetails=(action "details")}}
+  {{/each}}
+{{/if}}
+{{yield}}

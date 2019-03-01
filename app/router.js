@@ -14,6 +14,10 @@ Router.map(function() {
 
     this.route('reviewers', function() {});
   });
+
+  this.route('food-establishments', function() {
+    this.route('details', { path: '/:id' });
+  });
 });
 
 export default Router;
