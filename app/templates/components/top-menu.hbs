@@ -1,0 +1,28 @@
+{{#paper-toolbar}}
+  {{#paper-toolbar-tools}}
+    {{#paper-menu as |menu|}}
+      {{#menu.trigger}}
+        {{#paper-button iconButton=true}}
+          {{paper-icon "menu"}}
+        {{/paper-button}}
+      {{/menu.trigger}}
+      {{#menu.content width=4 as |content|}}
+        {{#content.menu-item onClick=(action "about")}}
+          {{paper-icon "info"}}
+          <span>about</span>
+        {{/content.menu-item}}
+
+      {{/menu.content}}
+    {{/paper-menu}}
+
+    <span class="flex"></span>
+    {{#link-to 'index'}}
+      <img class="logo-top-menu" src="https://image.flaticon.com/icons/png/512/287/287554.png">
+     {{/link-to}}
+    <span class="flex"></span>
+    {{paper-icon "search"}}
+
+  {{/paper-toolbar-tools}}
+
+
+{{/paper-toolbar}}

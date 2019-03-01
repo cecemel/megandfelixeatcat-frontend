@@ -8,8 +8,8 @@ export default Component.extend({
   }),
   ratingArray: computed('rating', function(){
     if(!this.rating) return [];
-    let maxStars = 5;
-    let filledStars = Array(Math.round(this.rating)).fill(1);
+    let maxStars = 3;
+    let filledStars = Array(Math.round(this.rating) > maxStars ? maxStars : Math.round(this.rating)).fill(1);
     if(filledStars.length >= maxStars)
       return filledStars;
     let greyStars = Array(maxStars - filledStars.length).fill(0);

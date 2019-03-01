@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('food-establishments', function() {
     this.route('details', { path: '/:id' });
   });
+  this.route('about');
 });
 
 export default Router;
