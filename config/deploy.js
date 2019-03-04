@@ -27,27 +27,26 @@ module.exports = function(deployTarget) {
     }
   };
 
-  // if (deployTarget === 'production') {
-  //   ENV.build.environment = 'production';
-  //   ENV['ssh-index'] = {
-  //     username: 'cecemel',
-  //     host: 'deploy.ruizdearcaute.com',
-  //     remoteDir: '/home/cecemel/data/megandfelixeatcat/dev-megandfelixeatcat-app/megandfelixeatcat-frontend',
-  //     agent: process.env.SSH_AUTH_SOCK,
-  //     port: 22,
-  //     allowOverwrite: true
-  //   };
+  if (deployTarget === 'production') {
+    ENV.build.environment = 'production';
+    ENV['ssh-index'] = {
+      username: 'cecemel',
+      host: 'deploy.ruizdearcaute.com',
+      remoteDir: '/home/cecemel/data/megandfelixeatcat/prod-megandfelixeatcat-app/megandfelixeatcat-frontend',
+      agent: process.env.SSH_AUTH_SOCK,
+      port: 22,
+      allowOverwrite: true
+    };
 
-  //   ENV['rsync'] = {
-  //     dest: '/home/cecemel/data/megandfelixeatcat/dev-megandfelixeatcat-app/megandfelixeatcat-frontend',
-  //     username: 'cecemel',
-  //     host: 'deploy.ruizdearcaute.com',
-  //     port: 22,
-  //     delete: false,
-  //     privateKey: process.env.SSH_AUTH_SOCK,
-  //     arg:['--verbose']
-  //   };
-  // }
+    ENV['rsync'] = {
+      dest: '/home/cecemel/data/megandfelixeatcat/prod-megandfelixeatcat-app/megandfelixeatcat-frontend',
+      host: 'cecemel@deploy.ruizdearcaute.com',
+      port: 22,
+      delete: false,
+      privateKey: process.env.SSH_AUTH_SOCK,
+      arg:['--verbose']
+    };
+  }
 
   return ENV;
 };
